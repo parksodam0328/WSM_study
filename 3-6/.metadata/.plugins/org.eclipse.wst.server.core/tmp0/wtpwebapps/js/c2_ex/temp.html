@@ -8,13 +8,12 @@ window.onload = showTemps;
 
 function showTemps() {
 	//배열 선언 및 할당
-
-
-
-
-
-
-
+	var tempByHour = new Array();
+	tempByHour[0] = 59.2;
+	tempByHour[1] = 60.1;
+	tempByHour[2] = 63;
+	tempByHour[3] = 65;
+	tempByHour[4] = 62;
 
 	for (var i = 0; i < tempByHour.length; i++) {
 		var theTemp = tempByHour[i];
@@ -33,14 +32,13 @@ function showTemps() {
 <h1>기온</h1>
 <ul>
 	<!-- 영역 표시 -->
-
-
-
-
-
-
-
+	<li id="temp0"></li>
+	<li id="temp1"></li>
+	<li id="temp2"></li>
+	<li id="temp3"></li>
+	<li id="temp4"></li>
 </ul>
+
 </body>
 </html>
 
