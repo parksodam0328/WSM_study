@@ -13,15 +13,18 @@ var cans = 99;
 
 lyrics = lyrics + "자판기에 " + drink + "가 " + cans + "캔 있습니다.<br>";
 //while문 안에 if문
-
-
-
-
-
-
-
-
-
+while(cans>0){ //1이상부터 99까지
+	lyrics = lyrics+cans+" 캔 남은 "+drink+"<br>";
+	lyrics = lyrics+"하나를 뽑아서 나눠주면, <br>";
+	if(cans>1){ //1이상인 경우 (cans-1)에 의해 1캔이 있습니다 출력
+		lyrics = lyrics +"자판기에 "+drink+"가 "+(cans-1)+"캔 있습니다.<br>";
+	}
+	else {//1인 경우 맙소사 자판기에 비타민 워터가 바닥났구요 후 탈출
+		lyrics = lyrics	+"맙소사! 자판기에 "+drink+"가 바닥났군요!<br>";
+	} //if문 종료
+	cans = cans-1; //2인 경우 (cans-1)에 의해 1캔이 있습니다. 출력후 cans=1이 됨
+	//1인경우 cans=cans-1에 의해 while 탇출
+}
 
 document.write(lyrics);
 </script>
