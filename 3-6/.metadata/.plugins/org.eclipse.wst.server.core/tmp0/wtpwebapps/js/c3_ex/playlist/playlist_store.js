@@ -36,3 +36,22 @@ function getStoreArray(key) {
 	return playlistArray;
 }
 
+function removeAll(){
+	if(confirm("모두 지울까요?")){
+		localStorage.clear()
+    }
+}
+
+function remove(songName){
+	if(confirm(songName+"을 지울까요?")){
+	var playlistArray = getSavedSongs();
+	var ul = document.getElementById("playlist");
+	if (playlistArray != null) {
+		for (var i = 0; i < playlistArray.length; i++) {
+			if(playlistArray[i]==songName)
+				 playlistArray.splice(i--,1);	
+		}
+		localStorage.setItem("playlist", JSON.stringify(playlistArray));
+	}
+	}
+}

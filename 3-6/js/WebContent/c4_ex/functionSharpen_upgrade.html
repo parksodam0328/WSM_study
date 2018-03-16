@@ -33,8 +33,8 @@ youravatar = getAvatar1(2112);
 window.onload = outputResults;
 function outputResults() {
 // 추가 변수에 함수 할당 1
-	
-	
+	document.getElementById("output");
+	output.innerHTML="userPoints = "+userPoints+"<br>youravatar = "+youravatar;
 	
 	
 	
@@ -45,6 +45,6 @@ function outputResults() {
 <body>
 
 <!--  추가 표시할 영역 2 -->
-
+<div id="output"></div>
 </body>
 </html>
