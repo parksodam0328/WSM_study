@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var fido={
+	name:"fido",
+	weight:40,
+	breed:"잡종",
+	loves:["걷기","공물어오기1","공물어뜯기1"]
+};
+
+var likes = fido.loves;
+var likesString ="Fido Likes";
+for(var i=0;i<likes.length;i++){
+	likesString+=" "+likes[i];
+}
+alert(likesString);
+bark(fido);
+function bark(dog){
+	if(dog.weight>25){
+		alert("WOOF");
+	}else{
+		alert("yip");
+	}
+}
+</script>
+</body>
+</html>

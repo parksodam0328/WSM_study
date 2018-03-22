@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>생성자만들기와 사용</title>
+<meta charset="utf-8">
+<script>
+//1.개에 대한 생성자 함수 만들기
+function Student(name, score, grade){
+	this.name=name;
+	this.score=score;
+	this.grade=grade;
+	this.comment=function(){
+		alert(this.name+" 학생의 점수는 "+this.score+"이고 등급은 "+this.grade+" 입니다.");
+	};
+	
+	
+}
+
+//2.생성자 사용
+//dog생성
+var stu1 = new Student("윤선희", 98, "A");
+var stu2 = new Student("이하나", 35, "F");
+var stu3 = new Student("김둘", 87, "B");
+var stu4 = new Student("우셋", 77, "C");
+document.write("생성자 test");
+//bark 메서드를 호출해서 작동해서 사용
+stu1.comment();
+stu2.comment();
+stu3.comment();
+stu4.comment();
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
