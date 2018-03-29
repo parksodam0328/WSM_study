@@ -30,7 +30,7 @@ window.onload = function() { document.write("1"+"<br>");
 								"현대 SF", 
 								3,
 								["3:00pm","4:00pm","9:00pm","10:00pm"]);
-	alert(mirimMovie.getNextShowing);
+	alert(mirimMovie.getNextShowing());
 	document.write("5"+"<br>");
 
 }
@@ -39,7 +39,7 @@ function Movie(title, genre, rating, showtimes) {
 // 추가 함수만들기
 document.write("6"+"<br>");
 	this.title=title;
-	this.genre=genre;
+	this.genre=genre;//
 	this.rating=rating;
 	this.showtimes=showtimes;
 	this.getNextShowing=function() {
