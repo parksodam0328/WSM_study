@@ -47,8 +47,6 @@ function displayLocation(position) {
 //추가5
 	if(map==null){
 		showMap(position.coords);
-	}else{
-		scrollMapToPosition(position.coords);
 	}
 
 }

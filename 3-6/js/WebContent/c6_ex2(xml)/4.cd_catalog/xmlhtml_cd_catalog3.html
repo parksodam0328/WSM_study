@@ -4,6 +4,7 @@
 table, th, td {
     border: 1px solid black;
     border-collapse:collapse;
+    background-color:f00fff;
 }
 th, td {
     padding: 5px;
@@ -25,7 +26,7 @@ xmlhttp.open("GET","cd_catalog.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
 
-document.write("<table><tr><th>Artist</th><th>Title</th></tr>");
+document.write("<table><tr><th>Artist</th><th>Title</th><th>Country</th><th>Company</th><th>Price</th><th>Year</th></tr>");
 var x=xmlDoc.getElementsByTagName("CD");
 for (i=0;i<x.length;i++)
   { 
@@ -33,6 +34,14 @@ for (i=0;i<x.length;i++)
   document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
   document.write("</td><td>");
   document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
   document.write("</td></tr>");
   }
 document.write("</table>");

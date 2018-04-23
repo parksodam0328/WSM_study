@@ -36,6 +36,9 @@ function displayLocation(position) {
 	if (map == null) {
 		showMap(position.coords);
 	}
+	else{
+		scrollMapToPosition(position.coords);
+	}
 //추가2	
 
 
@@ -132,6 +135,15 @@ function watchLocation() {
 
 //추가1
 
+function scrollMapToPosition(coords){
+	var latitude = coords.latitude;
+	var longitude = coords.longitude;
+	
+	var latlong = new google.maps.LatLng(latitude,longitude);
+	map.panTo(latlong);
+	
+	addMarker(map,latlong,"Your new location","You move to: "+latitude+", "+longitude);
+}
 
 
 

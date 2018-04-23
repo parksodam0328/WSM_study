@@ -35,7 +35,7 @@ window.onload = function() { document.write("1"+"<br>");
 
 }
 
-function Movie(title, genre, rating, showtimes) {
+function Movie(title, genre, rating, showtimes) {//생성자 함수
 // 추가 함수만들기
 document.write("6"+"<br>");
 	this.title=title;
@@ -43,7 +43,7 @@ document.write("6"+"<br>");
 	this.rating=rating;
 	this.showtimes=showtimes;
 	this.getNextShowing=function() {
-		var now=new Date().getTime();
+		var now=new Date().getTime();//현재 시간
 		for(var i=0;i<this.showtimes.length;i++){
 			document.write("7"+"<br>");
 			var showtime=getTimeFromString(this.showtimes[i]);

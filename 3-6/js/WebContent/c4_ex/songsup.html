@@ -5,6 +5,10 @@
 <meta charset="utf-8">
 <script>
 var num = prompt("좋아하는 노래의 단어를 입력하세요.");
+if(num==""){
+	alert("노래를 입력하세요.");
+	var num = prompt("좋아하는 노래의 단어를 입력하세요.","봄이 왔어요.");
+}
 var songs = [
     "Don't Stop Bitleaving, by Jourbee",
     "Material Geek, by Modonna",
@@ -17,7 +21,7 @@ function suggestSong() {
  
  var index=Math.floor(Math.random()*songs.length);
  document.write("총"+songs.length+"곡이 준비되어 있습니다.");
- document.write("<p>"+index+"번째곡");
+ document.write("<p>"+index+" 번째곡 ");
  var suggestion=songs[index];
  return suggestion;
 }
@@ -30,7 +34,7 @@ function searchForSong(word) {
 			return song+"곡이 있습니다.";
 		}
 	}
-	return "없는 곡입니다.";"
+	return "없는 곡입니다.";
 }
 var song = suggestSong();
 document.write("오늘의 추천곡은 "+song+"입니다.");

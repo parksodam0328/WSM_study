@@ -142,6 +142,8 @@ function scrollMapToPosition(coords) {
 								latitude + ", " + longitude);
 }
 
+
+
 function clearWatch() {
 	if (watchId) {
 		navigator.geolocation.clearWatch(watchId);
