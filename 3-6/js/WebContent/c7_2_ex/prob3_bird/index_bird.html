@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>TweetShirt</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="index_bird.css">
+<script type="text/javascript" charset="utf-8" src="index_bird.js">
+</script>
+</head>
+<body>
+	<canvas width="600" height="200" id="tshirtCanvas">
+	</canvas>
+	<form>
+		<p>
+			<label for="backgroundColor">Select background color:</label> <select
+				id="backgroundColor">
+				<option value="none" selected="selected">Neither</option>
+				<option value="lightyellow">Lightyellow</option>
+				<option value="black">Black</option>
+				<option value="yellow">Yellow</option>
+				<option value="pink">Pink</option>
+				<option value="lightblue">Lightblue</option>
+				<option value="red">Red</option>
+			</select>
+		</p>
+
+		<p>
+			<label for="shape">Select shape?</label> <select id="shape">
+				<option value="none" selected="selected">Neither</option>
+				<option value="squares">Squares</option>
+				<option value="circles">Circles</option>
+				<option value="lines">Lines</option>
+			</select>
+		</p>
+		<p>
+			<label for="shapeColor">Select shapeColor:</label> <select
+				id="shapeColor">
+				<option value="none" selected="selected">Neither</option>
+				<option value="magenta">Magenta</option>
+				<option value="black">Black</option>
+				<option value="green">Green</option>
+				<option value="gray">Gray</option>
+				<option value="yellow">Yellow</option>
+				<option value="red">Red</option>
+			</select>
+		</p>
+		<p>
+			<label for="foregroundColor">Select foregroundColor:</label> <select
+				id="foregroundColor">
+				<option value="none" selected="selected">Neither</option>
+				<option value="blue" >Blue</option>
+				<option value="white">White</option>
+				<option value="green">Green</option>
+				<option value="gray">Gray</option>
+				<option value="yellow">Yellow</option>
+				<option value="red">Red</option>
+			</select>
+		</p>
+
+
+		<p>
+			<label for="tweets">Pick a Tweets:</label> 
+			<select id="tweets"></select>
+		</p>
+
+		<p>
+			<input type="button" id="previewButton" value="Preview">
+		</p>
+	</form>
+
+	<script
+		src="http://tweetshirt.wickedlysmart.com/?callback=updateTweets"></script>
+</body>
+</html>
+
+
+
+

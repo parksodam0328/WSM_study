@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="m3606.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=39e0e0ace86508ca24146466f640ca06"></script>
+</head>
+<body>
+	<div id="cover_close"
+		onclick="document.getElementById('cover_close').style.display = 'none';"
+		style="cursor: pointer;">
+		<!-- style.display = 'none': click 하면 사라짐 -->
+		<img src="bg_img.png"
+			style="width: 100%; height: 100%; position: absolute; z-index: 5;">
+		<br> <br> <br> <br> <br> <img src="fireworks.png" style="width: 70%; left: 15%; position: absolute; z-index: 7;">
+	</div>
+<div data-role="header">
+<center><div style="background-color: #FF530D;height:50px;line-height:50px;" ><font color="#FFFFF0" size=5>서울시 문화 정보</font></div></center>
+</div><!-- /header -->
+
+<html>
+<body>
+<audio  src="bgm_music.mp3" controls="" autoplay="" loop="" preload="auto"></audio>
+
+<center>
+<select id="code" style="z-index:4;font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px;">
+		<option value="강남구">강남구</option>
+		<option value="강동구">강동구</option>
+		<option value="강북구">강북구</option>
+		<option value="강서구">강서구</option>
+		<option value="관악구">관악구</option>
+		<option value="광진구">광진구</option>
+		<option value="구로구">구로구</option>
+		<option value="금천구">금천구</option>
+		<option value="노원구">노원구</option>
+		<option value="도봉구">도봉구</option>
+		<option value="동대문구">동대문구</option>
+		<option value="동작구">동작구</option>
+		<option value="마포구">마포구</option>
+		<option value="서대문구">서대문구</option>
+		<option value="서초구">서초구</option>
+		<option value="성동구">성동구</option>
+		<option value="성북구">성북구</option>
+		<option value="송파구">송파구</option>
+		<option value="양천구">양천구</option>
+		<option value="영등포구">영등포구</option>
+		<option value="용산구">용산구</option>
+		<option value="은평구">은평구</option>
+		<option value="종로구">종로구</option>
+		<option value="중구">중구</option>
+		<option value="중랑구">중랑구</option>
+ 	</select>
+<select id="cul" style="z-index:4;font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px;">
+		<option value="문화행사">모든 문화행사 보기</option>
+		<option value="미술관">미술관</option>
+		<option value="공연장">공연장</option>
+		<option value="문화재">문화재</option>
+		<option value="박물관">박물관</option>
+</select>
+
+<input type=button value="검색" onclick="getInformation()" style="font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px; background-color:#fff; border:0; cursor:pointer;"/>
+<div id="map" style="width:100%; height:650px;"></div>
+<div id="v" style="width:80%; height:650px;margin-top:50px;margin-bottom:50px;"></div>
+
+</center>
+<div id="cultures" style="width:100%;"></div>
+<script src="m3606.js"></script>
+</body>
+</html>

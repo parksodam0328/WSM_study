@@ -13,7 +13,7 @@ function initMap() {
     };
 
 	map = new daum.maps.Map(mapContainer, mapOption);
-    map.setZoomable(false);
+    map.setZoomable(false); // 줌 못함
  	initControl();
 	myLocation();
 };

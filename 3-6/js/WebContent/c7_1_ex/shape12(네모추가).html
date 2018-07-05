@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <title>도형그리기</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	window.onload = function() {
+		var button = document.getElementById("previewButton");
+		button.onclick = previewHandler;
+	}
+
+	function previewHandler() {
+		var canvas = document.getElementById("tshirtCanvas");
+		var context = canvas.getContext("2d");
+
+		fillBackgroundColor(canvas, context);
+
+		var selectObj = document.getElementById("shape");
+		var index = selectObj.selectedIndex;
+		var shape = selectObj[index].value;
+		
+		if(shape =="squares"){
+			for(var squares = 0; squares < 15;squares++){
+				drawSquare(canvas,context);
+			}
+		}
+
+
+		
+		
+		
+		
+
+	}
+
+	// This is where we'll set the background color
+	function fillBackgroundColor(canvas, context) {
+		var selectObj = document.getElementById("backgroundColor");
+		var index = selectObj.selectedIndex;
+		var bgColor = selectObj[index].value;
+
+		context.fillStyle = bgColor;
+		context.fillRect(0, 0, canvas.width, canvas.height);
+
+	}
+
+	// Draws a square at a random location
+	function drawSquare(canvas, context) {
+		var w = Math.floor(Math.random() * 40);    
+		var x = Math.floor(Math.random() * canvas.width);
+		var y = Math.floor(Math.random() * canvas.height);
+
+		context.fillStyle = "rgb(0, 173, 239)";
+		context.fillRect(x, y, w, w);
+	}
+
+
+	function degreesToRadians(degrees) {
+	    return (degrees * Math.PI)/180;
+	}
+	</script>
+
+</head>
+<body>
+    <canvas width="600" height="200" id="tshirtCanvas">
+		<p>You need canvas to use Tweetshirt!</p>
+		<p>This example requires a browser that supports the
+		<a href="http://www.w3.org/html/wg/html5/">HTML5</a> 
+		&lt;canvas&gt; feature.</p>
+	</canvas>
+	<form>
+	<p>
+		<label for="backgroundColor">Select background color:</label>
+		<select id="backgroundColor">
+			<option value="white" selected="selected">White</option>
+			<option value="black">Black</option>
+		</select>
+	</p>
+<p>
+		<label for="shape">Circles or squares?</label>
+		<select id="shape">
+			<option value="none" selected="selected">Neither</option>
+			<option value="squares">Squares</option>
+		</select>
+	</p>
+
+
+
+
+
+
+
+
+
+	<p>
+		<input type="button" id="previewButton" value="Preview">
+	</p>
+</form>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <title>문자쓰기</title>
+  <script>
+  	function initiate(){
+  	  var elem=document.getElementById('canvas');
+  	  canvas=elem.getContext('2d');
+  
+  	  canvas.font="bold 24px verdana, sans-serif";
+  	  canvas.textAlign="start";/* 텍스트 정렬에 사용, start, end, left,right,center */
+  	  canvas.textBaseline="bottom"; /* 세로정렬사용, top, hanging, middle, alphabetic, ideographic, bottom */
+  	  canvas.fillText("My message", 100,124); /* x, y 좌표 */
+  
+  	  var size=canvas.measureText("My message");
+  	  canvas.strokeRect(100,100,size.width,24);
+  	}
+  	window.addEventListener("load", initiate, false);
+   </script>
+</head>
+<body>
+  <section id="canvasbox">
+    <canvas id="canvas" width="500" height="300">
+      Your browser doesn't support the canvas element
+    </canvas>
+  </section>
+</body>
+</html>

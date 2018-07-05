@@ -284,7 +284,7 @@ function handleRefresh() {
 	for (var i=1; i<16000; i=i+1000 )//16번 호출 i=1 j=1000, i=1001 j=2000, i=2001 j=3000,..., i=15001 j=16000 까지
 	{
 	var j = i + 999;
-    var url="http://openAPI.seoul.go.kr:8088/인증키/json/SeoulPublicLibrary/"+i+"/"+j;
+    var url="http://openAPI.seoul.go.kr:8088/46547356657061723130367773614650/json/SeoulPublicLibrary/"+i+"/"+j;
     $.getJSON(url, updateLibrary);
     
 	}//for
@@ -342,7 +342,7 @@ function updateLibrary(librarys) {//16번 호출
 		var lib = librarys[i];
 		var div = document.createElement("div");
 		div.setAttribute("class", "librarys");
-		
+		console.log(lib.CODE_VALUE == gus);
 		div.innerHTML="";
 		if (lib.CODE_VALUE == gus) {
 			div.innerHTML = "[" + lib.CODE_VALUE + "]" + lib.LBRRY_NAME;

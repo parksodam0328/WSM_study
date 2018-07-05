@@ -129,7 +129,7 @@ function getSelectValue() {
 
 
 function updateURL() {
-	url="http://openAPI.seoul.go.kr:8088/인증키/json/SearchPerformanceBySubjectService/1/500"
+	url="http://openAPI.seoul.go.kr:8088/46547356657061723130367773614650/json/SearchPerformanceBySubjectService/1/500"
 		+"/"+
 		subCode
 		//+"/?callback=SearchConcert"; //장르코드를 받아온대로 주소 업데이트

@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>피자그리기</title>
+<meta charset="utf-8">
+<style>
+	canvas {
+		border: 1px solid black;
+	}
+</style>
+<script>
+window.onload = arc1;
+
+function arc1() {
+	var canvas = document.getElementById("smiley");
+	var context = canvas.getContext("2d");
+//왼쪽피자
+	context.beginPath();
+	context.arc(100,100,50,0, degreesToRadians(270), true);
+	context.stroke();
+	context.beginPath();
+	context.moveTo(100,50);
+	context.lineTo(100,100);
+/*  context.moveTo(100,100);  필요없음 */
+	context.lineTo(150,100);
+	context.stroke();
+	
+	
+//오른쪽피자
+	context.beginPath();
+	context.arc(300,100,50, degreesToRadians(270), 0, true);
+	context.stroke();
+	context.beginPath();
+	context.moveTo(300,50);
+	context.lineTo(300,100);
+	context.lineTo(350,100);
+/*  	context.stroke(); 필요함-선이 완성되기 위해서 */
+}
+
+function degreesToRadians(degrees) {
+	radians = (degrees * Math.PI)/180;
+	return radians;
+}
+
+</script>
+</head>
+<body>
+    <canvas width="600" height="600" id="smiley">
+		<p>호를 그려요</p>
+	</canvas>
+</body>
+</html>
+
+

@@ -28,7 +28,7 @@ function handleRefresh() {
 	var j = i + 999;
 //	SearchParkingInfo
 
-	var url = "http://openAPI.seoul.go.kr:8088/키연결/데이터타입/서비스명/"+i+"/"+j;
+	var url = "http://openAPI.seoul.go.kr:8088/6d535054636a6f6b37394c43484343/json/SearchParkingInfo/"+i+"/"+j;
     $.getJSON(url, updatePark);
 	}
 	addBound();// 지도에 원을 표시

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+<header>
+<resultCode>00</resultCode>
+<resultMsg>NORMAL SERVICE.</resultMsg>
+</header>
+<body>
+<items>
+<item>
+	<deptCd>9770703</deptCd>
+	<empNm>강기윤</empNm>
+	<engNm>KANG Gi Yun</engNm>
+	<hjNm>姜起潤</hjNm>
+	<jpgLink>http://www.assembly.go.kr/photo/9770703.jpg</jpgLink>
+	<num>2681</num>
+	<origNm>경남 창원시성산구</origNm>
+	<reeleGbnNm>초선</reeleGbnNm>
+</item>
+<item>
+	<deptCd>9770275</deptCd>
+	<empNm>강기정</empNm>
+	<engNm>KANG Gi Jung</engNm>
+	<hjNm>姜琪正</hjNm>
+	<jpgLink>http://www.assembly.go.kr/photo/9770275.jpg</jpgLink>
+	<num>76</num>
+	<origNm>광주 북구갑</origNm>
+	<reeleGbnNm>3선</reeleGbnNm>
+</item>
+<item>
+	<deptCd>9770276</deptCd>
+	<empNm>강길부</empNm>
+	<engNm>KANG Ghil Boo</engNm>
+	<hjNm>姜吉夫</hjNm>
+	<jpgLink>http://www.assembly.go.kr/photo/9770276.jpg</jpgLink>
+	<num>153</num>
+	<origNm>울산 울주군</origNm>
+	<reeleGbnNm>3선</reeleGbnNm>
+</item>
+<item>
+	<deptCd>9770704</deptCd>
+	<empNm>강동원</empNm>
+	<engNm>KANG Dong Won</engNm>
+	<hjNm>姜東遠</hjNm>
+	<jpgLink>http://www.assembly.go.kr/photo/9770704.jpg</jpgLink>
+	<num>2612</num>
+	<origNm>전북 남원시순창군</origNm>
+	<reeleGbnNm>초선</reeleGbnNm>
+</item>
+<item>
+	<deptCd>9770512</deptCd>
+	<empNm>강석호</empNm>
+	<engNm>KANG Seok Ho</engNm>
+	<hjNm>姜碩鎬</hjNm>
+	<jpgLink>http://www.assembly.go.kr/photo/9770512.jpg</jpgLink>
+	<num>2784</num>
+	<origNm>경북 영양군영덕군봉화군울진군</origNm>
+	<reeleGbnNm>재선</reeleGbnNm>
+</item>
+<item>
+	<deptCd>9770705</deptCd>
+	<empNm>강석훈</empNm>
+	<engNm>KANG Seoghoon</engNm>
+	<hjNm>姜錫勳</hjNm>
+	<jpgLink>http://www.assembly.go.kr/photo/9770705.jpg</jpgLink>
+	<num>2810</num>
+	<origNm>서울 서초구을</origNm>
+	<reeleGbnNm>초선</reeleGbnNm>
+</item>
+</items>
+</body>
+</response>
