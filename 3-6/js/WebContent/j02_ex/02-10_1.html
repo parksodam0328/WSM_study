@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<title>02-10</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#album tr:odd").css("background-color","yellow");
+	$("#album tr:even").css("background-color","yellowgreen");
+	$("#album tr:first").css("background-color","aqua").css("color","pink");
+	$("#album tr:eq(2)").css("font-style","italic");
+});
+</script>
+</head>
+<body>
+	<h1>앨범 목록</h1>
+	<table id="album">
+		<tr>
+			<th>No</th><th>content</th><th>종류</th>
+		</tr>
+		<tr>
+			<td>No1</td><td>ParkWalk</td><td>여가</td>
+		</tr>
+		<tr>
+			<td>No2</td><td>SeoulRoad</td><td>여가</td>
+		</tr>
+		<tr>
+			<td>No3</td><td>SubwayInfo</td><td>위치</td>
+		</tr>
+		<tr>
+			<td>No4</td><td>MirimTour</td><td>위치</td>
+		</tr>
+	</table>
+</body>
+</html>

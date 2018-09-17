@@ -390,7 +390,7 @@ function updateCultural(cultures) {
 	   for (var i = 0; i < cultures.length; i++) {
 	      var c = cultures[i];
 	      if(c.SUBJCODE =="4"){
-	      var imageSrc = "마커1.png",
+	      var imageSrc = "marker1.png",
 			imageSize = new daum.maps.Size(27, 30), //마커의 크기(daummap에서 size 검색, 크기정보를 가지고 있는 사이즈 객체 생성)
 			imageOption = {offset: new daum.maps.Point(14, 28)};//point 검색, 화면 좌표 정보를 담고 있는 포인터 객체 생성
 		  
